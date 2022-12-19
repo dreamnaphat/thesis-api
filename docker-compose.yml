@@ -1,0 +1,11 @@
+version: "1"
+
+services:
+
+  api:
+    build: 
+      context: ./node
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./node:/usr/src/app
