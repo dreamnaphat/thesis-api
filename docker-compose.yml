@@ -9,3 +9,10 @@ services:
       - "3001:3001"
     volumes:
       - ./api:/usr/local/src/app
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d/
