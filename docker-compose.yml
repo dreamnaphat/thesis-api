@@ -4,8 +4,8 @@ services:
 
   api:
     build: 
-      context: ./node
+      context: ./api
     ports:
       - "3001:3001"
     volumes:
-      - ./node:/usr/src/app
+      - ./api:/usr/src/app
